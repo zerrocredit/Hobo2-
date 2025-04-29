@@ -12,8 +12,11 @@
             overflow: hidden;
         }
         #game {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 100vh;
+            height: 100%;
         }
     </style>
 </head>
@@ -26,6 +29,8 @@
             const player = ruffle.createPlayer();
             document.getElementById("game").appendChild(player);
             player.load("Hobo2.swf");
+            player.style.width = "100%";
+            player.style.height = "100%";
         });
     </script>
 </body>
